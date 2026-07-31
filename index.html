@@ -1,37 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bean & Bloom Café</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff7f5;
+      color: #4a3438;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f8dfe5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: #8d5364;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: #6d4652;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: #fff0f2;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      color: #814c5d;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d7839a;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 850px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #814c5d;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(100, 60, 70, 0.08);
+    }
+
+    .menu-item h3 {
+      color: #9b5d70;
+    }
+
+    .menu-item strong {
+      display: block;
+      margin-top: 8px;
+      color: #d06f8b;
+    }
+
+    #about {
+      text-align: center;
+      background: #fff0f2;
+      max-width: none;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #f8dfe5;
+      color: #6d4652;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>☕ Bean & Bloom Café</h1>
+  <header>
+    <h1>🌸 Bean & Bloom</h1>
 
-  <p>Good coffee. Good food. Good moments.</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Visit</a>
+    </nav>
+  </header>
 
-  <h2>Our Menu</h2>
+  <section id="home" class="hero">
+    <h2>A little cup of happiness ☕</h2>
 
-  <h3>Cappuccino - ₹160</h3>
-  <p>Rich espresso with creamy milk foam.</p>
+    <p>
+      Coffee, cake and cozy moments.
+    </p>
 
-  <h3>Cold Coffee - ₹180</h3>
-  <p>Chilled, creamy and refreshing.</p>
+    <a href="#menu" class="button">See Our Menu</a>
+  </section>
 
-  <h3>Chocolate Brownie - ₹140</h3>
-  <p>Warm and delicious chocolate brownie.</p>
+  <section id="menu">
 
-  <h2>About Us</h2>
+    <h2>Our Favourites 🌷</h2>
 
-  <p>
-    Bean & Bloom is a cozy neighborhood café
-    made for coffee, conversations and good food.
-  </p>
+    <div class="menu-item">
+      <h3>☕ Cappuccino</h3>
+      <p>Rich espresso with creamy milk foam.</p>
+      <strong>₹160</strong>
+    </div>
 
-  <h2>Visit Us</h2>
+    <div class="menu-item">
+      <h3>🧋 Cold Coffee</h3>
+      <p>Chilled, creamy and refreshing.</p>
+      <strong>₹180</strong>
+    </div>
 
-  <p>Ludhiana, Punjab</p>
-  <p>Open every day: 9 AM - 10 PM</p>
+    <div class="menu-item">
+      <h3>🍰 Chocolate Brownie</h3>
+      <p>Warm, gooey and chocolatey.</p>
+      <strong>₹140</strong>
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2>Our Little Story 🌸</h2>
+
+    <p>
+      Bean & Bloom is a cozy neighborhood café made for
+      slow mornings, sweet treats and good conversations.
+    </p>
+
+  </section>
+
+  <section id="contact">
+
+    <h2>Come Say Hi 💕</h2>
+
+    <p>📍 Ludhiana, Punjab</p>
+    <p>🕘 Open every day: 9 AM - 10 PM</p>
+    <p>📞 98765 43210</p>
+
+  </section>
+
+  <footer>
+    <p>Made with ☕ & 🌸</p>
+  </footer>
 
 </body>
 </html>
